@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three Full-Screen Pages with Iframes</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .iframe-container {
+            height: 100vh; /* Full viewport height */
+            display: flex;
+            flex-direction: column;
+        }
+
+        iframe {
+            width: 100%;
+            height: 50%; /* Full height of the container */
+            border: none; /* Remove iframe borders */
+        }
+    </style>
+</head>
+<body>
+    <div class="iframe-container">
+        <!-- First Page -->
+        <iframe src="index.html" title="Page 1"></iframe>
+    </div>
+
+    <div class="iframe-container">
+        <!-- Second Page -->
+        <iframe src="home.html" title="Page 2"></iframe>
+    </div>
+
+    <div class="iframe-container">
+        <!-- Third Page -->
+        <iframe src="contact_us.html" title="Page 3"></iframe>
+    </div>
+</body>
+</html>
